@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title></title>
+    
+</head>
+<body>
+    <header>
+        <div>
+ 
+            <h1>Formulários</h1> 
+        </div>
+    </header>
+    <main>
+      <h2>Faça o seu login</h2>
+        <!-- Inicio do formulário -->
+        
+        <fieldset>
+          <form action="/Pagamento" method="POST"><!-- action define a rota que os dados o form serão processados, method define como serão processados os dados do form (GET ou POST) -->
+            <legend>Entrar</legend>
+            <label for="nome">Nome:</label><br><input type="text" name="nome" id="nome" placeholder="Deigite o seu nome"><br>
+            <label for="email">E-mail:</label><br> 
+            <input type="email" nome="email" id="email"placeholder="email@me.com"><br><label for="senha">Senha</label><br>
+            <input type="password" name="Senha" id="senha"><br>
+        
+           <!--  <input type="submite" value="enviar"> -->
+            <br>
+          </form>
+          <div class=checkbox>
+              </form>
+              <form action="/Preferencias" method="GET">
+                <h3>Faça a sua escolha!</h3>
+                  <label for="Preferências">Atividades:</label>
+                  <br>
+                  <input type="checkbox" id= "Música" name="hobbies" value="Música"><label>Música</label>
+                  <br>
+                  <input type="checkbox" id= "Pintura" name="hobbies" value="Pintura"><label>Pintura</label>
+                  <br>
+                  <input type="checkbox" id= "Jogos" name="hobbies" value="Jogar" checked><label>Jogos</label>
+                  <br>
+                  <button type="submit">Enviar</button>
+                  <br>
+                  <h3>Agora escolha a sua forma de pagamento:</h3>
+                  <div class=escolhas>
+                    <label>Forma de Pagamento:</label>
+                    <br>
+                    <input type="radio" id="À Vista" name= "meio-de-pagamento" value="À Vista" checked><!-- Pré seleciona --><label for="À Vista">À Vista</label>
+                    <br>
+                    <input type="radio" id="Débito" name= "meio-de-pagamento" value="Débito"><label for="Débito">Débito</label>
+                    <br>
+                    <input type="radio" id= "Crédito" name= "meio-de-pagamento" value="Crédito"><label for="Crédito">Crédito</label> 
+                    <br>
+                    <button type="submit">Enviar</button>
+                </div>
+                </form>
+           </fieldset>
+      
+        
+  
+ 
+    </form>
+        </div> 
+
+</html>
